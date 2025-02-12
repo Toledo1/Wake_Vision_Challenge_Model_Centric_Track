@@ -1,0 +1,15 @@
+Report on ResNetLiteDepthwise
+
+This repository contains the following important files:
+- model_centric_track_v1.py: this file contains the model and the training process
+- wv_k_8_c_5.tflite: the trained model file which is very light and appropriated for low ressource devices
+
+In this work,we designed a light CNN architecture termed ResNetLiteDepthwise to accurately classify wake vision images. The model is based on Resnet backbone
+in which standard convolution blocks have been replaced by the light depthwise convolution blocks to reduce the model complexity and residual connexions were 
+useful to improve the gradiant flow in the deep architecture. 
+
+This work was done by:
+
+- MBIETHIEU Cezar (cezar.mbiethieu@facsciences-uy1.cm)
+- NDEFERE DESMOND
+- ABASIE MICLEM
