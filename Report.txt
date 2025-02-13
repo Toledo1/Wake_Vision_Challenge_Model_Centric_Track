@@ -11,5 +11,6 @@ useful to improve the gradiant flow in the deep architecture.
 This work was done by:
 
 - MBIETHIEU Cezar (cezar.mbiethieu@facsciences-uy1.cm)
+- DJAMEN YONKEU GILDAS
 - NDEFERE DESMOND
 - ABASIE MICLEM
