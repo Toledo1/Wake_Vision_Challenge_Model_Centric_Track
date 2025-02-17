@@ -3,14 +3,14 @@ import tensorflow_model_optimization as tfmot #for Post Training Quantization (P
 from datasets import load_dataset #for downloading the Wake Vision Dataset
 import tensorflow as tf #for designing and training the model 
 
-model_name = 'wv_k_8_c_5'
+model_name = 'bestmodel'
 
 #some hyperparameters 
 #Play with them!
-input_shape = (50,50,3)
+input_shape = (28,28,3)
 batch_size = 1024 
 learning_rate = 0.001
-epochs = 20
+epochs = 15
 
 #model architecture (with Quantization Aware Training - QAT)
 #Play with it!
@@ -110,8 +110,8 @@ def ResNetLiteDepthwise(input_shape, num_classes):
     return model
 
 
-model = ResNetLiteDepthwise(input_shape=(50, 50, 3), num_classes=2)
-#model = keras.Model(inputs, outputs)
+model = ResNetLiteDepthwise(input_shape=(28, 28, 3), num_classes=2)
+
 
 #compile model
 opt = tf.keras.optimizers.Adam(learning_rate=learning_rate)
