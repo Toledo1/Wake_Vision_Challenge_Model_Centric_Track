@@ -7,7 +7,7 @@ model_name = 'bestmodel'
 
 #some hyperparameters 
 #Play with them!
-input_shape = (28,28,3)
+input_shape = (50,50,3)
 batch_size = 1024 
 learning_rate = 0.001
 epochs = 15
@@ -110,7 +110,7 @@ def ResNetLiteDepthwise(input_shape, num_classes):
     return model
 
 
-model = ResNetLiteDepthwise(input_shape=(28, 28, 3), num_classes=2)
+model = ResNetLiteDepthwise(input_shape=(50, 50, 3), num_classes=2)
 
 
 #compile model
